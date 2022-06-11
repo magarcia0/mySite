@@ -5,8 +5,8 @@ function Contact() {
   return (
     <Layout>
       <div className="rounded bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
-        <div className="rounded dark:bg-slate-800 w-full flex items-center justify-center my-2 min-h-screen">
-          <div className="dark:bg-slate-800 bg-white shadow rounded py-12 lg:px-28 px-8">
+        <div className="rounded dark:bg-slate-800 bg-white shadow w-full flex items-center justify-center my-2 min-h-screen">
+          <div className="dark:bg-slate-800 bg-white rounded py-12 lg:px-28 px-8">
             <p className="dark:text-white md:text-3xl text-xl font-bold leading-7 text-center text-gray-700">
               Contact Me!
             </p>
