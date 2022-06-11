@@ -38,7 +38,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between py-2 navbar-expand-lg bg-slate-700 text-black shadow">
+      <nav className="relative flex flex-wrap items-center justify-between py-2 navbar-expand-lg bg-purple-600 text-black shadow">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
