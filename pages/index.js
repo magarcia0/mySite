@@ -21,7 +21,7 @@ export default function Home() {
                   Expected finish date 6/18/2022
                 </li>
                 <li className="leading-loose lg:text-5xl md:text-4xl font-extralight">
-                  Come back after the 6/18 for a more complete product
+                  Come back after 6/18/2022 for a more complete product
                 </li>
               </ol>
             </div>
