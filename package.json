@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
     "autoprefixer": "^9.8.8",
     "framer-motion": "^6.3.10",
     "next": "12.1.6",
