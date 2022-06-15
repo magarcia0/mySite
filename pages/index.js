@@ -9,7 +9,7 @@ export default function Home() {
       <title>{siteTitle}</title>
       <div className="min-h-screen p-10">
           <div className="space-y-10 md:space-y-0 md:grid ">
-            <div className="w-full dark:bg-slate-800 h-screen rounded-lg shadow-2xl bg-slate-700">
+            <div className="w-full  my-32 bg-gradient-to-b from-purple-600 to-indigo-700  h-screen rounded-lg shadow-2xl">
               <h2 className="text-white pt-16 text-2xl md:text-4xl px-4 lg:text-6xl font-bold mb-2">
                 Website is currently under development
               </h2>
@@ -30,5 +30,3 @@ export default function Home() {
     </Layout>
   );
 }
-
-            //<div className="w-full dark:bg-gradient-to-t dark:from-red-800 dark:to-slate-800 h-screen rounded-lg shadow-2xl bg-slate-700"></div>
