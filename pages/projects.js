@@ -46,7 +46,7 @@ function Projects() {
                 <p className="text-white text-lg">
                   A web app that allows you to build workouts! This was my
                   senior capstone that I plan on converting into a Web3 site in
-                  the future.
+                  the future. It will be a gated site.
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ function Projects() {
                   </a>
                 </h3>
                 <p className="text-lg text-white">
-                  An Android mobile application built that
+                  An Android mobile app that
                   keeps track of what's in your fridge and when it
                   expires. This mobile app also has other features like a local brewery finder
                   and a favorites page.
