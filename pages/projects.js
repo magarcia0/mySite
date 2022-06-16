@@ -106,10 +106,9 @@ function Projects() {
                   </a>
                 </h3>
                 <p className="text-lg text-white">
-                  An Android mobile app that
-                  keeps track of what's in your fridge and when it
-                  expires. This mobile app also has other features like a local brewery finder
-                  and a favorites page.
+                  Android mobile app that
+                  keeps track of what's in your fridge and expiration dates. 
+                  This app has other features like a brewery finder and favorites page.
                 </p>
               </div>
             </div>
