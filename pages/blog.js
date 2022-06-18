@@ -6,12 +6,14 @@ function Blog() {
       <div className="min-h-screen">
         <p className="mt-20 mb-12 text-4xl font-extrabold  dark:text-white">Coming soon!</p>
 
-        <div className="blogs__wraper rounded-md bg-gradient-to-b from-purple-600 to-indigo-700 py-16 px-16">
-          <div className="flex justify-between items-center">
-            <div className="blogs rounded-md bg-white mr-5 ">
+        <div className=" rounded-md bg-gradient-to-b from-purple-600 to-indigo-700 py-16 px-16">
+          <div className="flex flex-wrap -mx-4 items-center">
+
+            <div className="containter ">
+            <div className="blogs my-6 rounded-md bg-white">
               <img
                 src="https://images.unsplash.com/photo-1489396160836-2c99c977e970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                className="rounded-sm"
+                className="rounded-sm object-fill"
               />
               <div className="p-5">
                 <h1 className="text-2xl font-bold text-purple-800 py-2">
@@ -28,8 +30,9 @@ function Blog() {
                 </a>
               </div>
             </div>
+            </div>
 
-            <div className="blogs rounded-md bg-white mr-5">
+            <div className="blogs my-6 rounded-md bg-white">
               <img
                 src="https://images.unsplash.com/photo-1489396160836-2c99c977e970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="rounded-sm"
@@ -50,7 +53,7 @@ function Blog() {
               </div>
             </div>
 
-            <div className="blogs rounded-md bg-white mr-5">
+            <div className="blogs rounded-md my-6 bg-white">
               <img
                 src="https://images.unsplash.com/photo-1489396160836-2c99c977e970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="rounded-sm"
@@ -59,7 +62,7 @@ function Blog() {
                 <h1 className="text-2xl font-bold text-purple-800 py-2">
                   Lorem ipsum dolor sit amet
                 </h1>
-                <p className="bg-white text-sm text-black">
+                <p className="bg-white my-6 text-sm text-black">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Reiciendis vitae qui distinctio ex soluta? Voluptates, ea!
                   Esse, natus. Quas possimus laboriosam consectetur deserunt ea
