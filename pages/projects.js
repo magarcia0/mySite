@@ -14,14 +14,14 @@ function Projects() {
                 Below are some of the projects I've worked on and some I plan on
                 working on.
               </p>
-              <p className="dark:text-white pt-4 text-body-color text-lg">
+              <p className="dark:text-white pt-4 text-body-color text-xs">
                 *Individual project pages are currently in development
               </p>
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap -mx-4">
 
+        <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 lg:w-1/3 px-4 py-4">
            <div className="rounded bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
             <div className="max-w-[370px] mx-auto mb-10">
@@ -97,7 +97,7 @@ function Projects() {
               </div>
               <div>
                 <span
-                  className="bg-primary rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-blue-600 mb-5">
+                  className="bg-primary rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-blue-400 mb-5">
                   Android mobile app
                 </span>
                 <h3>
