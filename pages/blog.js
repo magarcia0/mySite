@@ -4,13 +4,11 @@ function Blog() {
   return (
     <Layout>
       <div className="min-h-screen">
-        <p className="mt-20 mb-12 text-4xl font-extrabold  dark:text-white">Coming soon!</p>
+        <p className="mt-20 mb-12 text-4xl font-extrabold dark:text-white">Coming soon!</p>
 
         <div className=" rounded-md bg-gradient-to-b from-purple-600 to-indigo-700 py-16 px-16">
-          <div className="flex flex-wrap -mx-4 items-center">
-
-            <div className="containter ">
-            <div className="blogs my-6 rounded-md bg-white">
+          <div className="flex justify-center flex-wrap items-center">
+            <div className="blogs mx-auto my-6 rounded-md max-w-lg bg-white">
               <img
                 src="https://images.unsplash.com/photo-1489396160836-2c99c977e970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="rounded-sm object-fill"
@@ -30,9 +28,8 @@ function Blog() {
                 </a>
               </div>
             </div>
-            </div>
 
-            <div className="blogs my-6 rounded-md bg-white">
+            <div className="blogs mx-auto my-6 max-w-lg rounded-md bg-white">
               <img
                 src="https://images.unsplash.com/photo-1489396160836-2c99c977e970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="rounded-sm"
@@ -53,7 +50,7 @@ function Blog() {
               </div>
             </div>
 
-            <div className="blogs rounded-md my-6 bg-white">
+            <div className="blogs mx-auto rounded-md my-6 max-w-lg bg-white">
               <img
                 src="https://images.unsplash.com/photo-1489396160836-2c99c977e970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="rounded-sm"
