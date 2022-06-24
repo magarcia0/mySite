@@ -19,7 +19,7 @@ export default function Header() {
         <NextSeo
         title="Marco Garcia"
         titleTemplate="Marco Garcia | Next SEO"
-        description="A website for Marco Garcia to show his development skills"
+        description="Full stack web developer Marco Garcia"
         canonical="https://marcoagarcia.com/"
         />
       </Head>
