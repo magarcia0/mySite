@@ -6,15 +6,15 @@ function Projects() {
       <div className="min-h-screen">
         <div className="flex flex-wrap justify-center -mx-4">
           <div className="w-full px-4">
-            <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-              <h2 className="dark:text-white mt-12 font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4">
+            <div className="text-center mx-auto mb-[60px] lg:mb-14 max-w-[510px]">
+              <h2 className="dark:text-white mt-12 font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-2">
                 Projects
               </h2>
               <p className="dark:text-white pt-4 text-body-color text-lg">
                 Below are some of the projects I've worked on and some I am currently
                 working on.
               </p>
-              <p className="dark:text-white pt-4 text-body-color text-xs">
+              <p className="dark:text-white pt-3 text-body-color text-xs">
                 *Individual project pages will be rolled out in the near future
               </p>
             </div>
@@ -102,7 +102,7 @@ function Projects() {
                   Android mobile app
                 </span>
                 <h3 className="text-white font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
-                    Runforhealth5k
+                    WildcatFridge+
                 </h3>
                   <a
                     href="https://github.com/magarcia0/wildcatfridge"
