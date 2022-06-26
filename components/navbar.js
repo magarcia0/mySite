@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import useDarkMode from "../components/darkmode";
+import Image from "next/image";
+import logo from "../pages/img/logo.png"
 
 export const LINKS = [
   { href: "/", label: "Home" },
@@ -42,9 +44,11 @@ export default function Nav() {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
-              <a className="text-white  no-underline md:text-2xl text-xl font-bold hover:text-blue-400 px-2">
-                Hello, World!
-              </a>
+              <Image src={logo}
+              height={35}
+              width={340}
+              className="hover:cursor-pointer"
+              />
             </Link>
             <button
               className="text-white cursor-pointer text-xl leading-none px-0 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
