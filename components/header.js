@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { siteTitle } from "../components/layout";
-import { NextSeo } from "next-seo";
 import icon from "../pages/img/icon.png"
 
 export default function Header() {
