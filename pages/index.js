@@ -5,11 +5,12 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import piggy from "./img/piggy.jpg"
+import code from "./img/code.jpg"
 import github from "./img/github.svg"
 import avatar from "./img/avatar.png";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase, faBullhorn, faCertificate, faPiggyBank, faReward } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faBullhorn, faCertificate, faCodeBranch, faPiggyBank, faReward } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 import { faHandshake } from "@fortawesome/free-regular-svg-icons";
@@ -35,7 +36,7 @@ export default function Home() {
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
+                <div className="lg:pr-12">
                   <h1 className="text-white font-semibold text-5xl">
                   Welcome to my Website!
                   </h1>
@@ -75,7 +76,7 @@ export default function Home() {
                     </div>
                     <h6 className="text-xl font-semibold">Deans List - 2022</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    Made Deans List for Spring '22 Semester
+                    Deans List Spring '22 Semester
                     </p>
                   </div>
                 </div>
@@ -87,7 +88,7 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gradient-to-b from-purple-600 to-indigo-700">
                       <FontAwesomeIcon icon={faUserGraduate} />
                     </div>
-                    <h6 className="text-xl font-semibold">BS Computer Science</h6>
+                    <h6 className="text-xl font-semibold">B.S. Computer Science</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
                       Bachelors in Computer Science from California State University, Chico
                     </p>
@@ -104,7 +105,7 @@ export default function Home() {
                     </div>
                     <h6 className="text-xl font-semibold">Deans List - 2018</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    Made Deans List for Fall'18 Semester
+                    Deans List Fall'18 Semester
                     </p>
                   </div>
                 </div>
@@ -119,10 +120,10 @@ export default function Home() {
                 <h3 className="text-3xl mb-2 font-semibold leading-normal dark:text-white">
                   Full Stack Developer
                 </h3>
-                <p className="text-lg font-light leading-relaxed dark:text-white mt-4 mb-4 text-blueGray-600">
+                <p className="text-lg leading-relaxed dark:text-white mt-4 mb-4 text-blueGray-600">
                   Experienced in both front-end and back-end web development
                 </p>
-                <p className="text-lg font-light leading-relaxed dark:text-white mt-0 mb-4 text-blueGray-600">
+                <p className="text-lg leading-relaxed dark:text-white mt-0 mb-4 text-blueGray-600">
                   Some web frameworks I have used include Next.js, Django, and Flutter.
                 </p>
                 <Link href="https://nextjs.org/">
@@ -143,12 +144,13 @@ export default function Home() {
                     <h4 className="text-xl font-bold text-black">
                       Top Notch Services
                     </h4>
-                    <p className="text-md font-light mt-2 text-black">
+                  <p className="mt-4 text-lg leading-relaxed text-black">
                     Offering quality, affordable website services. Static and dynamic web sites!
                     </p>
                   </blockquote>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
@@ -157,11 +159,25 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
                 <Image
                   alt="piggy bank"
                   className="max-w-full rounded-lg shadow-lg"
                   src={piggy}
+                  height={369}
+                  width={554}
                 />
+                 
+                  <blockquote className="relative p-8 pt-16 mb-4">
+                    <h4 className="text-xl font-bold text-black">
+                      Affordable
+                    </h4>
+                  <p className="mt-4 text-lg leading-relaxed  text-black">
+                    Don't break the piggy bank! First hour is FREE<span className="font-bold text-xl">*</span> on consultations
+                    </p>
+                  </blockquote>
+                  </div>
+
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
@@ -172,19 +188,17 @@ export default function Home() {
                     Affordable Consultations 
                   </h3>
                   <p className="mt-4 text-lg leading-relaxed dark:text-white text-black">
-                  Some website developers charge upwards of <span className="text-red-500">$240 </span> per hour for consultations.
+                  Some website developers charge upwards of <span className="text-red-500">$240 </span> per hour just on consultations!
                   </p>
                   <br/>
-                  <p className="mt-4 text-lg leading-relaxed dark:text-white text-black">
-                    Don't break the piggy bank! First hour is FREE* on consultations
+                  <p className="mt-4 font-semibold text-lg leading-relaxed dark:text-white text-black">
+                            *Any time after the first free hour, and before the second hour, incurs an $80 charge. $100 hourly rate after the second
+                            hour on consultations. 
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
                       <div className="flex items-center">
                         <div>
-                          <span className="text-xs dark:text-white font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                            *Affordable rate of $80 per hour after
-                          </span>
                         </div>
                       </div>
                     </li>
@@ -194,6 +208,51 @@ export default function Home() {
             </div>
           </div>
         <br/>
+        </section>
+
+        <section>
+        <div className="flex flex-wrap items-center mt-32">
+              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                <div className="p-3 text-xl text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
+                      <FontAwesomeIcon icon={faCodeBranch} />
+                </div>
+                <h3 className="text-3xl mb-2 font-semibold leading-normal dark:text-white">
+                  Your Website, Your Source Code
+                </h3>
+                <p className="text-lg  leading-relaxed dark:text-white mt-4 mb-4 text-blueGray-600">
+                  Some developers won't give you the source code to your website.
+                  After I finish your website ALL source code to your site is given to you.
+                </p>
+                <p className="text-lg  leading-relaxed dark:text-white mt-0 mb-4 text-blueGray-600">
+                 With access to your source code you can learn to maintain your site, hire somebody else, or 
+                 hire me for website maintanance.
+                </p>
+              </div>
+
+              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto py-20">
+                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
+                <Image
+                  alt="code"
+                  className="max-w-full rounded-lg shadow-lg"
+                  src={code}
+                  height={369}
+                  width={554}
+                />
+                  <blockquote className="relative p-8 pt-16 mb-4">
+                    <h4 className="text-xl font-bold text-black">
+                    Website Maintenance
+                    </h4>
+                  <p className="mt-4 text-lg leading-relaxed text-black">
+                    Having a website is just the start. With tools and services constantly
+                    updating you need to maintain your site. I offer affordable website 
+                    maintenance services.
+                  </p>
+                  </blockquote>
+                </div>
+              </div>
+
+            </div>
+
         </section>
 
         <section className="pt-20 pb-48">
@@ -297,9 +356,9 @@ export default function Home() {
                  Grow your business! 
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-white">
-                  More businesses are starting the realize the importance of an online presence.
-                  Not only does having a website boosts your credibility as a legitimate business, 
-                  it also allows you to make a strong impression on potential clients.
+                  More businesses are starting to realize the importance of an online presence.
+                  Not only does having a website boost your credibility as a legitimate business, 
+                  it also allows you to make a strong impression on potential customers.
                 </p>
               </div>
             </div>
@@ -312,21 +371,8 @@ export default function Home() {
                   Build credibility for your business
                 </h6>
                 <p className="mt-2 mb-4 text-white">
-                  Having a website lets customers find you online and builds more
-                  trust in your brand.
-                </p>
-              </div>
-              <div className="w-full lg:w-3/12 px-4 text-center">
-                <div className="text-2xl p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <FontAwesomeIcon icon={faBullhorn} />
-
-                </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
-                  Gain an internet presence
-                </h5>
-                <p className="mt-2 mb-4 text-white">
-                  Claim your own piece of the internet by having a website
-                  that will make a lasting impression on your current and future clients.
+                  With a well-developed website potential and current clients
+                  will take you more serious as a business.
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
@@ -337,9 +383,20 @@ export default function Home() {
                 Impress potential clients
                 </h5>
                 <p className="mt-2 mb-4 text-white">
-                  With a well developed website potential clients
-                  will take you more serious as a business.
-
+                  Claim your own piece of the internet by having a website
+                  that will make a lasting impression on your current and future clients.
+                </p>
+              </div>
+              <div className="w-full lg:w-3/12 px-4 text-center">
+                <div className="text-2xl p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                  <FontAwesomeIcon icon={faBullhorn} />
+                </div>
+                <h5 className="text-xl mt-5 font-semibold text-white">
+                  Gain an internet presence
+                </h5>
+                <p className="mt-2 mb-4 text-white">
+                  Having a website lets customers find you online and builds more
+                  trust in your brand.
                 </p>
               </div>
             </div>
