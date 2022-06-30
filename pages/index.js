@@ -18,7 +18,6 @@ import { faHandshake } from "@fortawesome/free-regular-svg-icons";
 export default function Home() {
   return (
     <Layout home>
-      <title>{siteTitle}</title>
       <main>
         <div className="relative mt-24 pt-24 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div
@@ -281,11 +280,14 @@ export default function Home() {
                       <Link href="https://github.com/magarcia0">
                         <button
                         className=" bg-gradient-to-t from-purple-600 to-indigo-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        aria-label="Button For Github Account"
                         type="button"
                         >
                           <Image
-                          alt="github"
+                          alt="github logo"
                           src={github}
+                          height={35}
+                          width={35}
                           />
                         </button>
                       </Link>
@@ -300,8 +302,8 @@ export default function Home() {
                     alt="avatar"
                     src={avatar}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
-                    height="90"
-                    width="90"
+                    height={90}
+                    width={90}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl dark:text-white text-black font-bold">Marco A. Garcia</h5>
@@ -312,11 +314,14 @@ export default function Home() {
                       <Link href="https://github.com/magarcia0">
                         <button
                         className=" bg-gradient-to-t from-purple-600 to-indigo-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        aria-label="Button For Github Account"
                         type="button"
                         >
                           <Image
-                          alt="github"
+                          alt="github logo"
                           src={github}
+                          height={35}
+                          width={35}
                           />
                         </button>
                       </Link>

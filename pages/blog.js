@@ -1,4 +1,8 @@
 import Layout from "../components/layout";
+import Image from "next/image";
+import metaverse from "./img/AO.png";
+import hello from "./img/hello.png";
+import pc from "./img/pc.png";
 
 function Blog() {
   return (
@@ -8,14 +12,13 @@ function Blog() {
 
         <div className=" rounded-md bg-gradient-to-b from-purple-600 to-indigo-700 py-16 px-16">
           <div className="flex justify-center flex-wrap items-center">
-            <div className="blogs mx-auto my-6 rounded-md max-w-lg bg-white">
-              <img
-                src="https://images.unsplash.com/photo-1489396160836-2c99c977e970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                className="rounded-sm object-fill"
+
+            <div className="blog mx-auto my-6 rounded-md max-w-lg bg-white">
+              <Image src={metaverse} 
               />
               <div className="p-5">
                 <h1 className="text-2xl font-bold text-purple-800 py-2">
-                  Lorem ipsum dolor sit amet
+                Adventures in the Metaverse
                 </h1>
                 <p className="bg-white text-sm text-black">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -29,14 +32,12 @@ function Blog() {
               </div>
             </div>
 
-            <div className="blogs mx-auto my-6 max-w-lg rounded-md bg-white">
-              <img
-                src="https://images.unsplash.com/photo-1489396160836-2c99c977e970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                className="rounded-sm"
+            <div className="blog mx-auto my-6 max-w-lg rounded-md bg-white">
+              <Image src={pc} 
               />
               <div className="p-5">
                 <h1 className="text-2xl font-bold text-purple-800 py-2">
-                  Lorem ipsum dolor sit amet
+                  Building my Desktop
                 </h1>
                 <p className="bg-white text-sm text-black">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -50,14 +51,11 @@ function Blog() {
               </div>
             </div>
 
-            <div className="blogs mx-auto rounded-md my-6 max-w-lg bg-white">
-              <img
-                src="https://images.unsplash.com/photo-1489396160836-2c99c977e970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                className="rounded-sm"
-              />
+            <div className="blog mx-auto rounded-md my-6 max-w-lg bg-white">
+              <Image src={hello}/>
               <div className="p-5">
                 <h1 className="text-2xl font-bold text-purple-800 py-2">
-                  Lorem ipsum dolor sit amet
+                  Hello, World!
                 </h1>
                 <p className="bg-white my-6 text-sm text-black">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
