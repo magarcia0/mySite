@@ -38,7 +38,7 @@ export default function Home() {
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="lg:pr-12">
                   <h1 className="text-white font-semibold text-5xl">
-                  Welcome to my Website!
+                    Marco A. Garcia
                   </h1>
                </div>
               </div>
