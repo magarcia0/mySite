@@ -85,6 +85,7 @@ function Contact() {
         return;
       }
       setShowSuccessMessage(true);
+      setShowValidationMessage(false);
       setShowFailureMessage(false);
       setButtonText("Send");
     }
