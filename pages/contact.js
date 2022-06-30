@@ -16,6 +16,7 @@ function Contact() {
   // Setting success or failure messages states
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showFailureMessage, setShowFailureMessage] = useState(false);
+  const [showValidationMessage, setShowValidationMessage] = useState(false);
 
   //form validation
   const handleValidation = () => {
@@ -25,22 +26,27 @@ function Contact() {
     if (name.length <= 0) {
       tempErrors["name"] = true;
       isValid = false;
+      setShowValidationMessage(true);
     }
     if (email.length <= 0) {
       tempErrors["email"] = true;
       isValid = false;
+      setShowValidationMessage(true);
     }
     if (company.length <= 0) {
       tempErrors["company"] = true;
       isValid = false;
+      setShowValidationMessage(true);
     }
     if (country.length <= 0) {
       tempErrors["country"] = true;
       isValid = false;
+      setShowValidationMessage(true);
     }
     if (message.length <= 0) {
       tempErrors["message"] = true;
       isValid = false;
+      setShowValidationMessage(true);
     }
 
     setErrors({ ...tempErrors });
@@ -186,7 +192,7 @@ function Contact() {
                   </button>
                 </div>
 
-                <div className="text-left">
+                <div className="text-left pt-3">
                   {showSuccessMessage && (
                     <p className="text-green-500 font-semibold text-sm my-2">
                       Thank you! Your Message has been delivered succesfully.
@@ -195,6 +201,11 @@ function Contact() {
                   {showFailureMessage && (
                     <p className="text-red-500">
                       Oops! Something went wrong, please try again.
+                    </p>
+                  )}
+                  {showValidationMessage && (
+                    <p className="text-red-500">
+                      Oops! All fields must be filled out, please try again.
                     </p>
                   )}
                 </div>
