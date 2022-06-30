@@ -14,9 +14,6 @@ function Projects() {
                 Below are some of the projects I've worked on and some I am currently
                 working on.
               </p>
-              <p className="dark:text-white pt-3 text-body-color text-xs">
-                *Individual project pages will be rolled out in the near future
-              </p>
             </div>
           </div>
         </div>

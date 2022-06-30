@@ -187,6 +187,7 @@ function Contact() {
                 <div className="flex items-center justify-center w-full">
                   <button
                     type="submit"
+                    aria-label="Submit Form"
                     className="mt-9 text-base font-semibold leading-none text-white py-4 px-10 bg-indigo-700 rounded hover:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 focus:outline-none"
                   >
                     {buttonText}

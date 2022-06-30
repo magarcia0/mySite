@@ -53,6 +53,7 @@ export default function Nav() {
             <button
               className="text-white cursor-pointer text-xl leading-none px-0 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
+              aria-label="Hamburger Menu"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               {menu}
