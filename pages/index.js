@@ -156,28 +156,8 @@ export default function Home() {
 
         <section className="relative py-8">
           <div className="container mx-auto px-4">
-            <div className="items-center flex flex-wrap">
-              <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
-                <Image
-                  alt="piggy bank"
-                  className="max-w-full rounded-lg shadow-lg"
-                  src={piggy}
-                  height={369}
-                  width={554}
-                />
-                 
-                  <blockquote className="relative p-8 pt-16 mb-4">
-                    <h4 className="text-xl font-bold text-black">
-                      Affordable
-                    </h4>
-                  <p className="mt-4 text-lg leading-relaxed  text-black">
-                    Don't break the piggy bank! First hour is FREE<span className="font-bold text-xl">*</span> on consultations
-                    </p>
-                  </blockquote>
-                  </div>
+            <div className="items-center flex flex-wrap flex-row-reverse">
 
-              </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
                   <div className="text-black text-3xl mt-28 bg-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-200">
@@ -204,6 +184,31 @@ export default function Home() {
                  </ul>
                 </div>
               </div>
+
+              <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
+                <Image
+                  alt="piggy bank"
+                  className="max-w-full rounded-lg shadow-lg"
+                  src={piggy}
+                  height={369}
+                  width={554}
+                />
+                 
+                  <blockquote className="relative p-8 pt-16 mb-4">
+                    <h4 className="text-xl font-bold text-black">
+                      Affordable
+                    </h4>
+                  <p className="mt-4 text-lg leading-relaxed  text-black">
+                    Don't break the piggy bank! First hour is FREE<span className="font-bold text-xl">*</span> on consultations
+                    </p>
+                  </blockquote>
+                  </div>
+              </div>
+
+
+
+
             </div>
           </div>
         <br/>
