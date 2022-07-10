@@ -73,7 +73,7 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gradient-to-b from-purple-600 to-indigo-700">
                       <FontAwesomeIcon icon={faCertificate} />
                     </div>
-                    <h2 className="text-xl font-semibold">Deans List - 2022</h2>
+                    <h1 className="text-xl font-semibold">Deans List - 2022</h1>
                     <p className="mt-2 mb-4 text-blueGray-500">
                     Deans List Spring '22 Semester
                     </p>
@@ -167,7 +167,7 @@ export default function Home() {
                     Affordable Consultations 
                   </h3>
                   <p className="mt-4 text-lg leading-relaxed dark:text-white text-black">
-                  Some website developers charge upwards of <span className="text-red-500">$240 </span> per hour just on consultations!
+                  Some website developers charge upwards of <span className="text-red-300">$240 </span> per hour just on consultations!
                   </p>
                   <br/>
                   <p className="mt-4 font-semibold text-lg leading-relaxed dark:text-white text-black">
@@ -277,7 +277,7 @@ export default function Home() {
                     width="90"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl text-black dark:text-white font-bold">Marco A. Garcia</h5>
+                    <h1 className="text-xl text-black dark:text-white font-bold">Marco A. Garcia</h1>
                     <p className="mt-1 text-sm text-black dark:text-white uppercase font-semibold">
                       Web Developer
                     </p>
@@ -377,9 +377,9 @@ export default function Home() {
                 <div className="text-2xl p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <FontAwesomeIcon icon={faHandshake} />
                 </div>
-                <h6 className="text-xl mt-5 font-semibold text-white">
+                <h5 className="text-xl mt-5 font-semibold text-white">
                   Build credibility for your business
-                </h6>
+                </h5>
                 <p className="mt-2 mb-4 text-white">
                   With a well-developed website potential and current clients
                   will take you more serious as a business.
