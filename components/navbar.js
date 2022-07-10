@@ -45,6 +45,7 @@ export default function Nav() {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
               <Image src={logo}
+              alt="website logo"
               height={35}
               width={340}
               className="hover:cursor-pointer"

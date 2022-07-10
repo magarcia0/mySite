@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { siteTitle } from "../components/layout";
 import icon from "../pages/img/icon.png"
 
 export default function Header() {
@@ -8,8 +7,6 @@ export default function Header() {
       <Head>
         <meta charSet="utf-8" />
         <link rel="icon" href="/icon.ico" />
-        <link rel="canonical" href="https://marcoagarcia.com/"></link>
-        <meta name="description" content="Marco Garcia Software Developer" />
         <meta property="og:title" content="Marco Garcia" />
         <meta property="og:site_name" content="Marco Garcia"></meta>
         <meta property="og:url" content="https://marcoagarcia.com/"></meta>

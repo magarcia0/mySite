@@ -73,7 +73,7 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gradient-to-b from-purple-600 to-indigo-700">
                       <FontAwesomeIcon icon={faCertificate} />
                     </div>
-                    <h6 className="text-xl font-semibold">Deans List - 2022</h6>
+                    <h2 className="text-xl font-semibold">Deans List - 2022</h2>
                     <p className="mt-2 mb-4 text-blueGray-500">
                     Deans List Spring '22 Semester
                     </p>
@@ -87,7 +87,7 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gradient-to-b from-purple-600 to-indigo-700">
                       <FontAwesomeIcon icon={faUserGraduate} />
                     </div>
-                    <h6 className="text-xl font-semibold">B.S. Computer Science</h6>
+                    <h2 className="text-xl font-semibold">B.S. Computer Science</h2>
                     <p className="mt-2 mb-4 text-blueGray-500">
                       Bachelors in Computer Science from California State University, Chico
                     </p>
@@ -102,7 +102,7 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gradient-to-b from-purple-600 to-indigo-700">
                       <FontAwesomeIcon icon={ faCertificate } />
                     </div>
-                    <h6 className="text-xl font-semibold">Deans List - 2018</h6>
+                    <h2 className="text-xl font-semibold">Deans List - 2018</h2>
                     <p className="mt-2 mb-4 text-blueGray-500">
                     Deans List Fall'18 Semester
                     </p>
@@ -160,7 +160,7 @@ export default function Home() {
 
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
-                  <div className="text-black text-3xl mt-28 bg-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-200">
+                  <div className="text-black text-3xl  bg-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-200">
                       <FontAwesomeIcon icon={faPiggyBank} />
                   </div>
                   <h3 className="text-3xl dark:text-white text-black font-semibold">
