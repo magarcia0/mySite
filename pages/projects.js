@@ -21,7 +21,7 @@ function Projects() {
 
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 lg:w-1/3 px-4 py-4">
-            <div className="rounded bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
+            <div className="rounded h-[40rem] bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
               <div className="max-w-[370px] mx-auto mb-10">
                 <div className="rounded overflow-hidden mb-8">
                   <img
@@ -43,7 +43,7 @@ function Projects() {
                     </Link>
                   </span>
                   <p className="text-white text-lg">
-                    A web app to build workouts! This was my senior capstone
+                    A web app to build and log workouts! This was my senior capstone
                     that I plan on converting into a gated Web3 site in the
                     future.
                   </p>
@@ -53,7 +53,7 @@ function Projects() {
           </div>
 
           <div className="w-full md:w-1/2 lg:w-1/3 px-4 py-4">
-            <div className="rounded bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
+            <div className="rounded h-[40rem] bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
               <div className="max-w-[370px] mx-auto mb-10">
                 <div className="rounded overflow-hidden mb-8">
                   <img
@@ -76,8 +76,8 @@ function Projects() {
                   </span>
                   <p className="text-white text-lg">
                     This website was created for a virtual 5K during the
-                    pandemic. The client was a non-profit health clinic and site
-                    was done for free.
+                    pandemic. The client was a non-profit health clinic and all
+                    development was done for free. 
                   </p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ function Projects() {
           </div>
 
           <div className="w-full md:w-1/2 lg:w-1/3 px-4 py-4">
-            <div className="rounded bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
+            <div className="rounded h-[40rem] bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
               <div className="max-w-[370px] mx-auto mb-10">
                 <div className="rounded overflow-hidden mb-8">
                   <img
@@ -109,7 +109,7 @@ function Projects() {
                   <p className="text-lg text-white">
                     Android app to keep track of what's in your fridge &
                     expiration dates. The app has more features which include a
-                    brewery finder.
+                    brewery finder and favorites page.
                   </p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ function Projects() {
           </div>
 
           <div className="w-full md:w-1/2 lg:w-1/3 px-4 py-4">
-            <div className="rounded bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
+            <div className="rounded h-[40rem] bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
               <div className="max-w-[370px] mx-auto mb-10">
                 <div className="rounded overflow-hidden mb-8">
                   <img
@@ -130,9 +130,6 @@ function Projects() {
                   <span className="bg-primary rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-green-400 mb-5">
                     Hosted
                   </span>
-                  <span className="bg-primary rounded inline-block text-center py-1 px-2 text-xs leading-loose font-semibold text-yellow-300 mb-5">
-                    In Development
-                  </span>
                   <h3 className="text-white font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
                     L.A. Quality Painting
                   </h3>
@@ -142,13 +139,46 @@ function Projects() {
                     </Link>
                   </span>
                   <p className="text-lg text-white">
-                    A web app for a client who runs a painting business.
-                    Currently in development.
+                    A website built for a client who runs a painting business.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+
+          <div className="w-full md:w-1/2 lg:w-1/3 px-4 py-4">
+            <div className="rounded h-[40rem] bg-gradient-to-b from-purple-600 to-indigo-700 py-3 px-3 w-full">
+              <div className="max-w-[370px] mx-auto mb-10">
+                <div className="rounded overflow-hidden mb-8">
+                  <img
+                    src="https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-02/image-02.jpg"
+                    alt="image"
+                    className="w-full"
+                  />
+                </div>
+                <div>
+                  <span className="bg-primary rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-green-400 mb-5">
+                  </span>
+                  <span className="bg-primary rounded inline-block text-center py-1 px-2 text-xs leading-loose font-semibold text-yellow-300 mb-5">
+                    In Development
+                  </span>
+                  <h3 className="text-white font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
+                   Crypto Miler 
+                  </h3>
+                  <span className="text-white hover:cursor-not-allowed font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
+                   Link coming soon!
+                  </span>
+                  <p className="text-lg text-white">
+                    This website is being developed for a clients crypto related project. 
+                    I will also be developing a web3, NFT marketplace for this client.
+                    The marketplace will allow users to buy, sell, and transfer NFT's 
+                    related to his project.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </Layout>
