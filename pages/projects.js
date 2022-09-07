@@ -167,7 +167,7 @@ function Projects() {
                    Crypto Miler 
                   </h3>
                   <span className="text-white hover:cursor-not-allowed font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
-                    <Link href="https://website-cryptomiler.vercel.app/</span>">
+                    <Link href="https://website-cryptomiler.vercel.app/">
                   https://website-cryptomiler.vercel.app/
                     </Link>
                   </span>
