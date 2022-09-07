@@ -157,16 +157,19 @@ function Projects() {
                   />
                 </div>
                 <div>
-                  <span className="bg-primary rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-green-400 mb-5">
+                  <span className="bg-primary -mr-4 rounded inline-block text-center py-1 px-4 text-xs leading-loose font-semibold text-green-400 mb-3">
+                    Hosted
                   </span>
-                  <span className="bg-primary rounded inline-block text-center py-1 px-2 text-xs leading-loose font-semibold text-yellow-300 mb-5">
-                    In Development
+                  <span className="bg-primary rounded inline-block text-center py-1 px-2 text-xs leading-loose font-semibold text-yellow-300 mb-3">
+                    In Development 
                   </span>
-                  <h3 className="text-white font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
+                  <h3 className="text-white font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-3 inline-block text-dark hover:text-primary">
                    Crypto Miler 
                   </h3>
                   <span className="text-white hover:cursor-not-allowed font-semibold text-xl sm:text-2xl lg:text-xl xl:text-2xl mb-4 inline-block text-dark hover:text-primary">
-                   Link coming soon!
+                    <Link href="https://website-cryptomiler.vercel.app/</span>">
+                  https://website-cryptomiler.vercel.app/
+                    </Link>
                   </span>
                   <p className="text-lg text-white">
                     This website is being developed for a clients crypto related project. 

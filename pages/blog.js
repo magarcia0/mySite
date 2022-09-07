@@ -14,7 +14,7 @@ function Blog() {
           <div className="flex justify-center flex-wrap items-center">
 
             <div className="blog mx-auto my-6 rounded-md max-w-lg bg-white">
-              <Image src={metaverse} 
+              <Image alt="metaverse image" src={metaverse} 
               />
               <div className="p-5">
                 <h1 className="text-2xl font-bold text-purple-800 py-2">
@@ -33,7 +33,7 @@ function Blog() {
             </div>
 
             <div className="blog mx-auto my-6 max-w-lg rounded-md bg-white">
-              <Image src={pc} 
+              <Image className="" alt="computer image" src={pc} 
               />
               <div className="p-5">
                 <h1 className="text-2xl font-bold text-purple-800 py-2">
@@ -52,7 +52,7 @@ function Blog() {
             </div>
 
             <div className="blog mx-auto rounded-md my-6 max-w-lg bg-white">
-              <Image src={hello}/>
+              <Image alt="hello, world image" src={hello}/>
               <div className="p-5">
                 <h1 className="text-2xl font-bold text-purple-800 py-2">
                   Hello, World!
