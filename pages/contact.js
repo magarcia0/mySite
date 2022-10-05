@@ -110,8 +110,8 @@ function Contact() {
                       tabIndex={0}
                       arial-label="Input name"
                       type="name"
-                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
-                      placeholder="Input name"
+                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-400"
+                      placeholder="John Dough"
                       onChange={(e) => {
                         setName(e.target.value);
                       }}
@@ -125,8 +125,8 @@ function Contact() {
                       tabIndex={0}
                       arial-label="Please input email address"
                       type="name"
-                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
-                      placeholder="Please input email address"
+                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-400"
+                      placeholder="example@emailprovider.com"
                       onChange={(e) => {
                         setEmail(e.target.value);
                       }}
@@ -141,10 +141,10 @@ function Contact() {
                     <input
                       tabIndex={0}
                       role="input"
-                      arial-label="Please input company name"
+                      arial-label="Please input company or N/A"
                       type="name"
-                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 "
-                      placeholder="Please input company name"
+                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-400 "
+                      placeholder="Company or N/A"
                       onChange={(e) => {
                         setCompany(e.target.value);
                       }}
@@ -158,8 +158,8 @@ function Contact() {
                       tabIndex={0}
                       arial-label="Please input country name"
                       type="name"
-                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100"
-                      placeholder="Please input country name"
+                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-400"
+                      placeholder="Country Name"
                       onChange={(e) => {
                         setCountry(e.target.value);
                       }}
@@ -176,7 +176,8 @@ function Contact() {
                       aria-label="leave a message"
                       role="textbox"
                       type="name"
-                      className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-100 resize-none"
+                      placeholder="Leave a Message..."
+                      className="h-36 text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-400 resize-none"
                       defaultValue={""}
                       onChange={(e) => {
                         setMessage(e.target.value);
