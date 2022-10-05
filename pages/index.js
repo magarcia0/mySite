@@ -1,6 +1,6 @@
 //Code for landing page adapted from:
 //https://github.com/creativetimofficial/notus-nextjs/blob/main/pages/landing.js
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -10,7 +10,7 @@ import github from "./img/github.svg"
 import avatar from "./img/avatar.png";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase, faBullhorn, faCertificate, faCodeBranch, faPiggyBank, faReward } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faBullhorn, faCertificate, faCodeBranch, faPiggyBank, faTerminal } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faUserGraduate } from "@fortawesome/free-solid-svg-icons";
 import { faHandshake } from "@fortawesome/free-regular-svg-icons";
@@ -73,9 +73,9 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gradient-to-b from-purple-600 to-indigo-700">
                       <FontAwesomeIcon icon={faCertificate} />
                     </div>
-                    <h1 className="text-xl font-semibold">Deans List - 2022</h1>
+                    <h1 className="text-xl font-semibold">Security+</h1>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    Deans List Spring '22 Semester
+                    CompTIA Security+ certified
                     </p>
                   </div>
                 </div>
@@ -100,11 +100,11 @@ export default function Home() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-gradient-to-b from-purple-600 to-indigo-700">
-                      <FontAwesomeIcon icon={ faCertificate } />
+                      <FontAwesomeIcon icon={ faTerminal } />
                     </div>
-                    <h2 className="text-xl font-semibold">Deans List - 2018</h2>
+                    <h2 className="text-xl font-semibold">Current Position</h2>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    Deans List Fall'18 Semester
+                      Associate Software Engineer
                     </p>
                   </div>
                 </div>
@@ -141,10 +141,10 @@ export default function Home() {
                   />
                   <blockquote className="relative p-8 pt-16 mb-4">
                     <h4 className="text-xl font-bold text-black">
-                      Top Notch Services
+                      Currently Employed
                     </h4>
                   <p className="mt-4 text-lg leading-relaxed text-black">
-                    Offering quality, affordable website services. Static and dynamic web sites!
+                    My current position title is Associate Software Engineer.
                     </p>
                   </blockquote>
                 </div>
@@ -164,15 +164,15 @@ export default function Home() {
                       <FontAwesomeIcon icon={faPiggyBank} />
                   </div>
                   <h3 className="text-3xl dark:text-white text-black font-semibold">
-                    Affordable Consultations 
+                  No longer doing work for clients
                   </h3>
                   <p className="mt-4 text-lg leading-relaxed dark:text-white text-black">
-                  Some website developers charge upwards of <span className="text-red-300">$240 </span> per hour just on consultations!
+                  Due to the nature of my current position, I am no longer taking on work for clients. This is to avoid what could
+                  appear to be a personal conflict of interest.
                   </p>
                   <br/>
                   <p className="mt-4 font-semibold text-lg leading-relaxed dark:text-white text-black">
-                            *Any time after the first free hour, and before the second hour, incurs an $80 charge. $100 hourly rate after the second
-                            hour on consultations. 
+                    
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
@@ -197,17 +197,13 @@ export default function Home() {
                  
                   <blockquote className="relative p-8 pt-16 mb-4">
                     <h4 className="text-xl font-bold text-black">
-                      Affordable
+                    Not taking any clients
                     </h4>
                   <p className="mt-4 text-lg leading-relaxed  text-black">
-                    Don't break the piggy bank! First hour is FREE<span className="font-bold text-xl">*</span> on consultations
                     </p>
                   </blockquote>
                   </div>
               </div>
-
-
-
 
             </div>
           </div>
@@ -225,19 +221,19 @@ export default function Home() {
                 </h3>
                 <p className="text-lg  leading-relaxed dark:text-white mt-4 mb-4 text-blueGray-600">
                   Some developers won't give you the source code to your website.
-                  After I finish your website ALL source code to your site is given to you.
+                  When looking for someone to build your website make sure they give you 
+                  your source code. If they say 'no' take your business elsewhere.
                 </p>
                 <p className="text-lg  leading-relaxed dark:text-white mt-0 mb-4 text-blueGray-600">
-                 With access to your source code you can learn to maintain your site, hire somebody else, or 
-                 hire me for website maintanance.
+                 With access to your source code you can learn to maintain your site or hire somebody else for maintenance
                 </p>
               </div>
 
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto py-20">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
+                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-t-xl bg-white">
                 <Image
                   alt="code"
-                  className="max-w-full rounded-lg shadow-lg"
+                  className="max-w-full roundeda-b-md rounded-t-lg shadow-lg"
                   src={code}
                   height={369}
                   width={554}
@@ -248,9 +244,7 @@ export default function Home() {
                     </h4>
                   <p className="mt-4 text-lg leading-relaxed text-black">
                     Having a website is just the start. With tools and services constantly
-                    updating you need to maintain your site. I offer affordable website 
-                    maintenance services.
-                  </p>
+                    updating you need to maintain your site.                   </p>
                   </blockquote>
                 </div>
               </div>
