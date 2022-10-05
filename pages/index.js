@@ -233,7 +233,7 @@ export default function Home() {
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-t-xl bg-white">
                 <Image
                   alt="code"
-                  className="max-w-full roundeda-b-md rounded-t-lg shadow-lg"
+                  className="max-w-full rounded-t-lg shadow-lg"
                   src={code}
                   height={369}
                   width={554}
