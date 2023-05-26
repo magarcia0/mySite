@@ -19,12 +19,6 @@ export default function (req, res) {
     text: req.body.message,
     html: `<div>${req.body.message}</div>`
    }
-   res.set({
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Credentials": true
-  });
-
    transporter.sendMail(mailData, function (err, info) {
     if(err){
       return res.status(err.statusCode || 500);
