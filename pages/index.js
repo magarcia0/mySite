@@ -7,6 +7,7 @@ import Image from "next/image";
 import piggy from "./img/piggy.jpg"
 import code from "./img/code.jpg"
 import github from "./img/github.svg"
+import linked from "./img/linked.svg"
 import avatar from "./img/avatar.png";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -75,7 +76,7 @@ export default function Home() {
                     </div>
                     <h1 className="text-xl font-semibold">Security+</h1>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                    CompTIA Security+ certified
+                    CompTIA Security+ Certified
                     </p>
                   </div>
                 </div>
@@ -104,7 +105,7 @@ export default function Home() {
                     </div>
                     <h2 className="text-xl font-semibold">Current Position</h2>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Associate Software Engineer
+                      Software Engineer
                     </p>
                   </div>
                 </div>
@@ -290,6 +291,20 @@ export default function Home() {
                           />
                         </button>
                       </Link>
+                      <Link href="https://www.linkedin.com/in/marco-garcia-a03051248">
+                        <button
+                        className=" bg-gradient-to-t from-purple-600 to-indigo-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        aria-label="Button For Github Account"
+                        type="button"
+                        >
+                          <Image
+                          alt="github logo"
+                          src={linked}
+                          height={35}
+                          width={35}
+                          />
+                        </button>
+                      </Link>
                    </div>
                   </div>
                 </div>
@@ -319,6 +334,20 @@ export default function Home() {
                           <Image
                           alt="github logo"
                           src={github}
+                          height={35}
+                          width={35}
+                          />
+                        </button>
+                      </Link>
+                      <Link href="https://www.linkedin.com/in/marco-garcia-a03051248">
+                        <button
+                        className=" bg-gradient-to-t from-purple-600 to-indigo-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        aria-label="Button For Github Account"
+                        type="button"
+                        >
+                          <Image
+                          alt="github logo"
+                          src={linked}
                           height={35}
                           width={35}
                           />

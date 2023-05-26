@@ -172,10 +172,7 @@ function Projects() {
                     </Link>
                   </span>
                   <p className="text-lg text-white">
-                    This website is being developed for a clients crypto related project. 
-                    I will also be developing a web3, NFT marketplace for this client.
-                    The marketplace will allow users to buy, sell, and transfer NFT's 
-                    related to his project.
+                    This website was developed for a clients crypto related project. 
                   </p>
                 </div>
               </div>

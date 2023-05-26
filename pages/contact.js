@@ -31,7 +31,7 @@ function Contact() {
       isValid = false;
       setShowValidationMessage(true);
     }
-  if (message.length <= 0) {
+    if (message.length <= 0) {
       tempErrors["message"] = true;
       isValid = false;
       setShowValidationMessage(true);
@@ -45,62 +45,42 @@ function Contact() {
   //Handling form submit
   const handleSubmit = (e) => {
     e.preventDefault();
-
     let isValidForm = handleValidation();
 
     if (isValidForm) {
       let data = {
         name,
         email,
-        message
-    }
+        message,
+      };
       setButtonText("Sending");
-      /*const res = fetch("/api/contact", {
+      fetch("/api/contact", {
         method: "POST",
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          message: message,
-        }),
         headers: {
-          "Accept": "application/json",
+          Accept: "application/json, text/plain, */*",
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin" : "*", 
         },
-      });*/
-
-      const res = fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       }).then((res) => {
-          console.log('Response received')
-          if (res.status === 200) {
-              console.log('Response succeeded!')
-              setName('')
-              setEmail('')
-              setMessage('')
-          }
-      })
-    
+        console.log("Response received");
+        if (res.status === 200) {
+          console.log("Response succeeded!");
+          setName("");
+          setEmail("");
+          setMessage("");
+        } else {
+          console.log(error);
+          setShowSuccessMessage(false);
+          setShowFailureMessage(true);
+          setButtonText("Send");
+          return;
+        }
+      });
 
-    /*  const { error } = res.json();
-      if (error) {
-        console.log(error);
-        setShowSuccessMessage(false);
-        setShowFailureMessage(true);
-        setButtonText("Send");
-        return;
-      }
-      */
       setShowSuccessMessage(true);
       setShowValidationMessage(false);
       setShowFailureMessage(false);
       setButtonText("Send");
-      console.log("I made it all the way")
     }
   };
 
