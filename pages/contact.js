@@ -5,8 +5,6 @@ function Contact() {
   //Contact form states
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [country, setCountry] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
 
@@ -33,17 +31,7 @@ function Contact() {
       isValid = false;
       setShowValidationMessage(true);
     }
-    if (company.length <= 0) {
-      tempErrors["company"] = true;
-      isValid = false;
-      setShowValidationMessage(true);
-    }
-    if (country.length <= 0) {
-      tempErrors["country"] = true;
-      isValid = false;
-      setShowValidationMessage(true);
-    }
-    if (message.length <= 0) {
+  if (message.length <= 0) {
       tempErrors["message"] = true;
       isValid = false;
       setShowValidationMessage(true);
@@ -62,15 +50,14 @@ function Contact() {
 
     if (isValidForm) {
       setButtonText("Sending");
-      const res = await fetch("/api/sendgrid", {
+      const res = await fetch("/api/contact", {
         body: JSON.stringify({
           name: name,
           email: email,
-          company: company,
-          country: country,
           message: message,
         }),
         headers: {
+          "Accept": "application/json, text/plain, */*",
           "Content-Type": "application/json",
         },
         method: "POST",
@@ -88,6 +75,10 @@ function Contact() {
       setShowValidationMessage(false);
       setShowFailureMessage(false);
       setButtonText("Send");
+      setName("");
+      setEmail("");
+      setMessage("");
+      console.log("I made it all the way")
     }
   };
 
@@ -110,7 +101,7 @@ function Contact() {
                       tabIndex={0}
                       arial-label="Input name"
                       type="name"
-                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-400"
+                      className="text-base leading-none text-gray-900 p-3 focus:outline-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-400"
                       placeholder="John Dough"
                       onChange={(e) => {
                         setName(e.target.value);
@@ -133,39 +124,7 @@ function Contact() {
                     />
                   </div>
                 </div>
-                <div className="md:flex items-center mt-8">
-                  <div className="md:w-72 flex flex-col">
-                    <label className="dark:text-white text-base font-semibold leading-none text-gray-800">
-                      Company name
-                    </label>
-                    <input
-                      tabIndex={0}
-                      role="input"
-                      arial-label="Please input company or N/A"
-                      type="name"
-                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-400 "
-                      placeholder="Company or N/A"
-                      onChange={(e) => {
-                        setCompany(e.target.value);
-                      }}
-                    />
-                  </div>
-                  <div className="md:w-72 flex flex-col md:ml-6 md:mt-0 mt-4">
-                    <label className="dark:text-white text-base font-semibold leading-none text-gray-800">
-                      Country
-                    </label>
-                    <input
-                      tabIndex={0}
-                      arial-label="Please input country name"
-                      type="name"
-                      className="text-base leading-none text-gray-900 p-3 focus:oultine-none focus:border-indigo-700 mt-4 bg-gray-100 border rounded border-gray-200 placeholder-gray-400"
-                      placeholder="Country Name"
-                      onChange={(e) => {
-                        setCountry(e.target.value);
-                      }}
-                    />
-                  </div>
-                </div>
+
                 <div>
                   <div className="w-full flex flex-col mt-8">
                     <label className="dark:text-white text-base font-semibold leading-none text-gray-800">
