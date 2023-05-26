@@ -40,9 +40,7 @@ function Blog() {
                 <p className="bg-white text-sm text-black">
                   Growing up I can remember hearing my sister tell my parents that my oldest brother
                   knew how to build computers. That was the spark that lit my interest in
-                  computers. When I was young, we didn't have luxury of being able to splurge on components.
-
-                  
+                  personal computers. When I was young, we didn't have luxury of being able to splurge on PC components...
                 </p>
                 <a className="py-2 mt-4 px-3 text-white bg-indigo-700 hover:cursor-not-allowed inline-block rounded-lg">
                   Coming Soon!
