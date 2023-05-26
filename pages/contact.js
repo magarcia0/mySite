@@ -43,29 +43,51 @@ function Contact() {
   };
 
   //Handling form submit
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     let isValidForm = handleValidation();
 
     if (isValidForm) {
+      let data = {
+        name,
+        email,
+        message
+    }
       setButtonText("Sending");
-      const res = await fetch("/api/contact", {
+      /*const res = fetch("/api/contact", {
+        method: "POST",
         body: JSON.stringify({
           name: name,
           email: email,
           message: message,
         }),
         headers: {
-          "Accept": "application/json, text/plain, */*",
+          "Accept": "application/json",
           "Content-Type": "application/json",
           "Access-Control-Allow-Origin" : "*", 
-          "Access-Control-Allow-Credentials" : true 
         },
-        method: "POST",
-      });
+      });*/
 
-      const { error } = await res.json();
+      const res = fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      }).then((res) => {
+          console.log('Response received')
+          if (res.status === 200) {
+              console.log('Response succeeded!')
+              setName('')
+              setEmail('')
+              setMessage('')
+          }
+      })
+    
+
+    /*  const { error } = res.json();
       if (error) {
         console.log(error);
         setShowSuccessMessage(false);
@@ -73,13 +95,11 @@ function Contact() {
         setButtonText("Send");
         return;
       }
+      */
       setShowSuccessMessage(true);
       setShowValidationMessage(false);
       setShowFailureMessage(false);
       setButtonText("Send");
-      setName("");
-      setEmail("");
-      setMessage("");
       console.log("I made it all the way")
     }
   };
