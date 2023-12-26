@@ -62,14 +62,14 @@ function Contact() {
         },
         body: JSON.stringify(data),
       }).then((res) => {
-        console.log("Response received");
+        //console.log("Response received");
         if (res.status === 200) {
           console.log("Response succeeded!");
           setName("");
           setEmail("");
           setMessage("");
         } else {
-          console.log(error);
+          console.log(errors);
           setShowSuccessMessage(false);
           setShowFailureMessage(true);
           setButtonText("Send");

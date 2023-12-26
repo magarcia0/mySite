@@ -145,7 +145,7 @@ export default function Home() {
                       Currently Employed
                     </h4>
                   <p className="mt-4 text-lg leading-relaxed text-black">
-                    My current position title is Associate Software Engineer.
+                    My current position title is: Software Engineer.
                     </p>
                   </blockquote>
                 </div>

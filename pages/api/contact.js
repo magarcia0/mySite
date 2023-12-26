@@ -1,6 +1,6 @@
 export default function (req, res) {
   let nodemailer = require("nodemailer");
-  require('dotenv').config()
+  require("dotenv").config();
 
   const transporter = nodemailer.createTransport({
     port: 465,
@@ -14,18 +14,19 @@ export default function (req, res) {
 
   const mailData = {
     from: process.env.EMAIL,
-    to: 'magarcia@marcoagarcia.com',
+    to: "magarcia@marcoagarcia.com",
     subject: `Message From ${req.body.name}. Their email is: ${req.body.email}`,
     text: req.body.message,
-    html: `<div>${req.body.message}</div>`
-   }
-   transporter.sendMail(mailData, function (err, info) {
-    if(err){
+    html: `<div>${req.body.message}</div>`,
+  };
+  transporter.sendMail(mailData, function (err, info) {
+    if (err) {
       return res.status(err.statusCode || 500);
+    } else {
+      //console.log("info:", info);
+      res.sendStatus(200);
     }
-    else
-      console.log(info)
-  })
+  });
 
-  return res.status(200);
+  return res.end();
 }
