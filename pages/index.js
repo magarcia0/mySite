@@ -105,7 +105,7 @@ export default function Home() {
                     </div>
                     <h2 className="text-xl font-semibold">Current Position</h2>
                     <p className="mt-2 mb-4 text-blueGray-500">
-                      Software Engineer
+                      Senior Software Engineer
                     </p>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function Home() {
                       Currently Employed
                     </h4>
                   <p className="mt-4 text-lg leading-relaxed text-black">
-                    My current position title is: Software Engineer.
+                    My current position title is: Senior Software Engineer at SAIC
                     </p>
                   </blockquote>
                 </div>
@@ -274,7 +274,7 @@ export default function Home() {
                   <div className="pt-6 text-center">
                     <h1 className="text-xl text-black dark:text-white font-bold">Marco A. Garcia</h1>
                     <p className="mt-1 text-sm text-black dark:text-white uppercase font-semibold">
-                      Web Developer
+                      Full Stack Developer
                     </p>
                     <div className="mt-6">
                       <Link href="https://github.com/magarcia0">
@@ -310,6 +310,7 @@ export default function Home() {
                 </div>
               </div>
 
+          {/*
              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
                   <Image
@@ -357,6 +358,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+          */}
             </div>
           </div>
         </section>
