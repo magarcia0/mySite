@@ -1,4 +1,4 @@
-export default function (req, res) {
+export default async function (req, res) {
   let nodemailer = require("nodemailer");
   require("dotenv").config();
 
@@ -19,6 +19,20 @@ export default function (req, res) {
     text: req.body.message,
     html: `<div>${req.body.message}</div>`,
   };
+
+  await new Promise((resolve, reject) => {
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        resolve(info);
+        res.sendStatus(200);
+      }
+    });
+  });
+
+  /*
   transporter.sendMail(mailData, function (err, info) {
     if (err) {
       return res.status(err.statusCode || 500);
@@ -27,6 +41,6 @@ export default function (req, res) {
       res.sendStatus(200);
     }
   });
-
+  */
   return res.end();
 }
