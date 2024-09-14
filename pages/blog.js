@@ -12,7 +12,7 @@ function Blog() {
               Blog
             </h1>
             <div className="mx-auto rounded-md my-6 max-w-lg border bg-white">
-              <Image className="rounded-md" alt="hello, world image" src="hello.png"/>
+              <Image className="rounded-md" alt="Marco Garcia - hello, world image" src="hello.png"/>
               <div className="p-5">
                 <h1 className="text-2xl font-bold text-purple-800 py-2">
                   Hello, World!

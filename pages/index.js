@@ -24,6 +24,7 @@ const Home = () => {
     <Layout home>
       <main>
         {/* Hero Section */}
+        <h1 className="hidden">Marco Garcia</h1>
         <motion.div
           className="relative mt-24 pt-24 pb-32 flex content-center items-center justify-center min-h-screen"
           style={{ opacity: heroOpacity }}
@@ -33,7 +34,7 @@ const Home = () => {
             className="absolute top-0 w-full h-full bg-center bg-cover rounded-sm"
             >
           <Image
-            alt="Piggy Bank"
+            alt="Marco Garcia - Hero Banner Image"
             src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
             layout="fill"
             priority
@@ -143,7 +144,7 @@ const Home = () => {
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto py-20">
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
                   <Image
-                    alt="Currently Employed"
+                    alt="Marco Garcia - Currently Employed"
                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
                     className="w-full align-middle rounded-t-lg"
                     height={369}
@@ -183,7 +184,7 @@ const Home = () => {
               <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
                   <Image
-                    alt="Piggy Bank"
+                    alt="Marco Garcia - Piggy Bank"
                     className="max-w-full rounded-lg shadow-lg"
                     src="/piggy.jpg"
                     height={369}
@@ -206,7 +207,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 mb-5 bg-white rounded-full shadow-lg">
-              <Image src="/avatar.png" alt="Avatar" className="w-16 h-16 rounded-full" width={128} height={128} />
+              <Image src="/avatar.png" alt="Marco Garcia - Avatar" className="w-16 h-16 rounded-full" width={128} height={128} />
             </div>
             <h4 className="text-xl font-semibold dark:text-white">Let's Connect!</h4>
             <div className="flex justify-center mt-4">
@@ -216,7 +217,7 @@ const Home = () => {
                 target="_blank"
                 aria-label="GitHub"
               >
-                <Image src="/github.svg" alt="GitHub" width={32} height={32} className="rounded-full bg-indigo-500 hover:bg-blue-300" />
+                <Image src="/github.svg" alt="Marco Garcia - GitHub" width={32} height={32} className="rounded-full bg-indigo-500 hover:bg-blue-300" />
               </a>
               <a
                 href="https://www.linkedin.com/in/marco-garcia-a03051248"
@@ -224,7 +225,7 @@ const Home = () => {
                 target="_blank"
                 aria-label="LinkedIn"
               >
-                <Image src="/linked.svg" alt="LinkedIn" width={32} height={32} className="rounded-full bg-indigo-500 hover:bg-blue-300" />
+                <Image src="/linked.svg" alt="Marco Garcia - LinkedIn" width={32} height={32} className="rounded-full bg-indigo-500 hover:bg-blue-300" />
               </a>
             </div>
           </div>
