@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
       <Head>
-        <title>Marco Garcia - Web Developer & Designer | Portfolio</title>
+        <title>Marco Garcia - Software Engineer | Portfolio</title>
         <meta charSet="utf-8" />
         <link rel="icon" href="/icon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
