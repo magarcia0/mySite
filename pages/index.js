@@ -26,21 +26,21 @@ const Home = () => {
         {/* Hero Section */}
         <h1 className="hidden">Marco Garcia</h1>
         <motion.div
-          className="relative mt-24 pt-24 pb-32 flex content-center items-center justify-center min-h-screen"
+          className="relative pt-24 pb-32 flex content-center items-center justify-center min-h-screen"
           style={{ opacity: heroOpacity }}
           transition={{ duration: 0.6 }}
         >
           <div
-            className="absolute top-0 w-full h-full bg-center bg-cover rounded-sm"
+            className="absolute top-0 w-screen h-full bg-center bg-cover rounded-sm"
             >
           <Image
             alt="Marco Garcia - Hero Banner Image"
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+            src="/code.jpg"
             layout="fill"
             priority
           />
           </div>
-          <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
+          <span id="blackOverlay" className="w-screen h-full absolute opacity-60  bg-black"></span>
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
