@@ -53,10 +53,18 @@ const projects = [
   {
     title: "Wildcat.plus",
     image: "https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-01/image-01.jpg",
-    description: "A full stack web app to build and log workouts! This was my senior capstone project. Currently, the backend is not functional since Heroku stopped offering PostgreSQL free tier.",
+    description: "A full stack web app to build and log workouts! This was my senior capstone project. I plan on revamping this project soon.",
     status: "Hosted",
     link: "https://wildcat.plus/",
     linkText: "wildcat.plus"
+  },
+    {
+    title: "Cinthias Party Decor",
+    image: "https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-03/image-02.jpg",
+    description: "The latest project I created for a party decor business.",
+    status: "Hosted",
+    link: "https://balloon-decor.vercel.app/",
+    linkText: "https://balloon-decor.vercel.app/"
   },
   {
     title: "Unhobbies",
