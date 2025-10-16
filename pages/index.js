@@ -189,7 +189,7 @@ const Home = () => {
                     <p className="mt-1 text-lg leading-relaxed dark:text-white text-black">
                       Below are some of my hobbies
                     </p>
-                    <ul class="list-disc list-inside mx-auto w-1/2">
+                    <ul className="list-disc list-inside mx-auto w-1/2">
                       <li>Home Automation (HA Server)</li>
                       <li>PC Building</li>
                       <li>Kayaking</li>

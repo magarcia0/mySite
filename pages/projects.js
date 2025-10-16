@@ -56,15 +56,15 @@ const projects = [
     description: "A full stack web app to build and log workouts! This was my senior capstone project. I plan on revamping this project soon.",
     status: "Hosted",
     link: "https://wildcat.plus/",
-    linkText: "wildcat.plus"
+    linkText: "https://wildcat.plus/"
   },
     {
     title: "Cinthias Party Decor",
     image: "https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-03/image-02.jpg",
     description: "The latest project I created for a party decor business.",
     status: "Hosted",
-    link: "https://balloon-decor.vercel.app/",
-    linkText: "https://balloon-decor.vercel.app/"
+    link: "https://www.cinthiaspartydecor.com",
+    linkText: "https://www.cinthiaspartydecor.com"
   },
   {
     title: "Unhobbies",
@@ -72,7 +72,7 @@ const projects = [
     description: "This blog website was created for fun on my spare time.",
     status: "Hosted",
     link: "https://www.unhobbies.com/",
-    linkText: "unhobbies.com"
+    linkText: "https://www.unhobbies.com"
   },
   {
     title: "Runforhealth5k",
@@ -88,7 +88,7 @@ const projects = [
     description: "A website built for a client who runs a painting business.",
     status: "Hosted",
     link: "https://www.laqualitypainting.com/",
-    linkText: "laqualitypainting.com"
+    linkText: "https://www.laqualitypainting.com"
   },
   {
     title: "WildcatFridge+",
@@ -104,7 +104,7 @@ const projects = [
     description: "This website was developed for a client's crypto-related project.",
     status: "Hosted",
     link: "https://website-cryptomiler.vercel.app/",
-    linkText: "website-cryptomiler.vercel.app/"
+    linkText: "https://website-cryptomiler.vercel.app/"
   }
 ];
 
